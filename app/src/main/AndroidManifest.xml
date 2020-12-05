@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eykcorp.renalapp">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.eykcorp.renalapp.activity.TurnosActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+             >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.eykcorp.renalapp.activity.PacientesActivity"
+        android:screenOrientation="portrait"/>
+
+        <activity android:name="com.eykcorp.renalapp.activity.LoginActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.eykcorp.renalapp.activity.AsignacionEquipoActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.eykcorp.renalapp.activity.ParamIniActivity"
+        android:screenOrientation="portrait"/>
+
+        <activity android:name="com.eykcorp.renalapp.activity.DesconexionActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.eykcorp.renalapp.activity.TomaSignosActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.eykcorp.renalapp.activity.EdicionTomaSignosActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.eykcorp.renalapp.activity.InfoAdicionalActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.eykcorp.renalapp.activity.SeleccionMedicamentoActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.eykcorp.renalapp.activity.ConexionActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.eykcorp.renalapp.activity.ReporteActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

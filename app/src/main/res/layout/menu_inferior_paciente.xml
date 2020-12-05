@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Información adicional"
+        android:drawableLeft="@mipmap/ic_info_black_36dp"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:drawablePadding="10dp"
+        android:textColor="@android:color/black"
+        android:textAllCaps="true"
+        android:id="@+id/txvInfo"
+        android:padding="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Asignar/Cambiar Máquina"
+        android:drawableLeft="@mipmap/ic_maquina_dialisis_36dp"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:drawablePadding="10dp"
+        android:textColor="@android:color/black"
+        android:textAllCaps="true"
+        android:id="@+id/txvAsignar"
+        android:padding="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Conectar"
+        android:drawableLeft="@mipmap/ic_invert_colors_black_36dp"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:drawablePadding="10dp"
+        android:textColor="@android:color/black"
+        android:textAllCaps="true"
+        android:id="@+id/txvConectar"
+        android:padding="16dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Parametros Vitales"
+        android:textSize="16sp"
+        android:drawablePadding="10dp"
+        android:textColor="@android:color/black"
+        android:drawableLeft="@mipmap/ic_book_black_36dp"
+        android:gravity="center_vertical"
+        android:textAllCaps="true"
+        android:id="@+id/txvTomaSignos"
+        android:padding="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Parametros Iniciales"
+        android:drawableLeft="@mipmap/ic_info_black_36dp"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:drawablePadding="10dp"
+        android:textColor="@android:color/black"
+        android:textAllCaps="true"
+        android:id="@+id/txvParamIni"
+        android:padding="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawableLeft="@mipmap/ic_invert_colors_off_black_36dp"
+        android:gravity="center_vertical"
+        android:text="Desconectar"
+        android:textSize="16sp"
+        android:drawablePadding="10dp"
+        android:textColor="@android:color/black"
+        android:textAllCaps="true"
+        android:id="@+id/txvDesconectar"
+        android:padding="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawableLeft="@mipmap/ic_import_contacts_black_36dp"
+        android:gravity="center_vertical"
+        android:text="Reporte Hemodiálisis"
+        android:textSize="16sp"
+        android:drawablePadding="10dp"
+        android:textColor="@android:color/black"
+        android:textAllCaps="true"
+        android:id="@+id/txvReporte"
+        android:padding="16dp"/>
+
+
+</LinearLayout>

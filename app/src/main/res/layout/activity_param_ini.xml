@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="PARÁMETROS INICIALES"
+        android:textStyle="bold"
+        android:background="@color/colorTitulo2"
+        android:textSize="17dp"
+        android:textColor="@color/colorWhite"
+        android:paddingLeft="10dp"
+        android:gravity="left|center"/>
+
+    <TextView
+        android:id="@+id/txvTituloPaciente"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="JEISON JIMENEZ - 30 AÑOS"
+        android:background="@color/colorTitulo"
+        android:textSize="17dp"
+        android:textColor="@color/colorToolbar"
+        android:gravity="center"/>
+
+    <ProgressBar
+        android:id="@+id/loading"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:gravity="clip_vertical">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtInpAclaramiento"
+            app:errorEnabled="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Aclaramiento(mL)"
+                android:id="@+id/txtAclaramiento"
+                android:inputType="numberDecimal"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtInpNaPlasmotico"
+            app:errorEnabled="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Na Plasmático(mmol/L)"
+                android:id="@+id/txtNaPlasmotico"
+                android:inputType="numberDecimal"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GUARDAR"
+            android:textColor="@color/colorText"
+            android:id="@+id/btnConectarEquipo"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:textSize="17dp"
+            android:background="#E84E40"
+            android:layout_gravity="center_horizontal" />
+
+     </LinearLayout>
+
+</LinearLayout>

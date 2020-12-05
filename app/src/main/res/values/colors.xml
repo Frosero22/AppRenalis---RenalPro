@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="fondoLogin">#D84949</color>
+    <color name="colorLink">#337AB7</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorText">#ECE7EB</color>
+    <color name="colorTitulo">#D4D0C8</color>
+    <color name="colorToolbar">#E84E40</color>
+    <color name="colorItemPaciente">#EFF2F7</color>
+    <color name="colorEstadoPaciente">#03A9F4</color>
+    <color name="colorItemSignos">#EFF2F7</color>
+    <color name="colorFloatButtom">#00A6FF</color>
+    <color name="colorTitulo2">#9BD49B</color>
+
+    <color name="tab_selected">#519657</color>
+    <color name="tab_unselected">#b2fab4</color>
+    <color name="titulo_activity_disable">#330575b4</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>

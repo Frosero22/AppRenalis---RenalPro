@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardMedicamento"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:clickable="true"
+    card_view:cardElevation="1dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:background="@color/colorItemPaciente"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardUseCompatPadding="true">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:background="@color/colorItemPaciente">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/chkMed"/>
+
+            <TableLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:shrinkColumns="1"
+                android:background="@color/colorItemPaciente">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtMedicamento"
+                    android:layout_span="2"
+                    android:text="ACEITE DE VASELINA (PETROLATO LÍQUIDO) / COCOILISOTIONATO DE SODIO / ISOSTEAROIL LACTILATO SÓDICO / SUCROSA / TITANIO DIÓXIDO / VASELINA BLANCA 127G JABON EN BARRA"
+                    android:textSize="17dp"
+                    android:textAlignment="textStart"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:background="@android:color/transparent"
+                    android:textStyle="bold"/>
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CANTIDAD:"
+                        android:textSize="15dp"
+                        android:textAlignment="textStart"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:background="@android:color/transparent"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txvCantidad"
+                        android:text="3"
+                        android:textSize="15dp"
+                        android:textAlignment="textStart"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:background="@android:color/transparent"
+                       />
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FRECUENCIA:"
+                        android:textSize="15dp"
+                        android:textAlignment="textStart"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:background="@android:color/transparent"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txvFrecuencia"
+                        android:text="3"
+                        android:textSize="15dp"
+                        android:textAlignment="textStart"
+                        android:paddingLeft="5dp"
+                        android:singleLine="false"
+                        android:paddingRight="5dp"
+                        android:background="@android:color/transparent"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DURACION:"
+                        android:textSize="15dp"
+                        android:textAlignment="textStart"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:background="@android:color/transparent"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txvDuracion"
+                        android:text="3"
+                        android:paddingRight="5dp"
+                        android:textSize="15dp"
+                        android:textAlignment="textStart"
+                        android:paddingLeft="5dp"
+                        android:singleLine="false"
+                        android:background="@android:color/transparent"
+                        />
+                </TableRow>
+            </TableLayout>
+
+
+
+     </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.cardview.widget.CardView>
