@@ -501,6 +501,14 @@ public class DesconexionActivity extends GenericActivity{
             txtTiempo.requestFocus();
             return false;
         }
+
+        if(txtKtv.getText().toString().equalsIgnoreCase("")){
+            txtInpKtv.setErrorEnabled(true);
+            txtInpKtv.setError("Ingresa KTV");
+            txtKtv.requestFocus();
+            return false;
+        }
+
         return true;
     }
 

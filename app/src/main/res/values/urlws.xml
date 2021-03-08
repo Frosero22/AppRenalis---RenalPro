@@ -6,6 +6,6 @@
     <!--<string name="base_path" >http://52.41.41.146:8383/renalis-ws</string>-->
 
     <!-- RENALPRO-->
-    <string name="base_path" >http://renalpro.renal-is.com/renalis-ws</string>
+    <string name="base_path" >https://renalpro.renal-is.com/renalis-ws</string>
         
 </resources>

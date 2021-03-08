@@ -106,7 +106,12 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if(validarCampos()){
                     //Log.i("LoginActivity", "Datos correctos");
-                    autenticar(txtUsuario.getText().toString(),txtClave.getText().toString());
+                    try{
+                        autenticar(txtUsuario.getText().toString(),txtClave.getText().toString());
+                    }catch (Exception e){
+                        e.printStackTrace();
+                    }
+
                 }
             }
         });
@@ -401,8 +406,6 @@ public class LoginActivity extends AppCompatActivity {
     private void autenticar(final String usuario, final String clave){
         try{
             String url = this.getString(R.string.base_path) + "/v1/mobile/login";
-            Log.d("LoginActivity", "URL: " + url);
-
             JSONObject objJson = new JSONObject();
 
             requestQueue= Volley.newRequestQueue(this);
@@ -410,7 +413,7 @@ public class LoginActivity extends AppCompatActivity {
                     Request.Method.POST,
                     url,
                     objJson,
-                    new Response.Listener<JSONObject>() {
+            new Response.Listener<JSONObject>() {
                         @Override
                         public void onResponse(JSONObject response) {
                             try {
@@ -448,7 +451,9 @@ public class LoginActivity extends AppCompatActivity {
             };
 
             jsonRequest.setRetryPolicy(WsUtil.setTimeOut());
-
+            Log.e("JSON REQUEST ","------> "+jsonRequest.getBody().toString());
+            Log.e("JSON REQUEST","------> "+jsonRequest.toString());
+            Log.e("JSON REQUEST","------> "+jsonRequest.getBodyContentType());
             requestQueue.add(jsonRequest);
             loadingLogin.setVisibility(View.VISIBLE);
         }catch(Exception e){
